@@ -15,6 +15,14 @@ public class JavaCalculator {
     int number2 = scanner.nextInt();
 
     //Go to sleep, then add operators
+    System.out.println("Select a Number Function: ");
+    System.out.println("1. Addition (+)");
+    System.out.println("2. Subtraction (-)");
+    System.out.println("3. Multiplication (*)");
+    System.out.println("4. Division (/)");
+
+    System.out.print("Enter your functions number: ");
+    int choice = scanner.nextInt();
 
     //Add operator functions
 
