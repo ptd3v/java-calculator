@@ -6,7 +6,7 @@ public class JavaCalculator {
   //main method declared
   public static void main(String[] args) {
     //Creating a new Scanner that can read a users input
-    Scanner scanner = new Scanner(system.in);
+    Scanner scanner = new Scanner(System.in);
 
     //Enter two integers
     System.out.print("Enter the First Number: ");
@@ -21,8 +21,9 @@ public class JavaCalculator {
     System.out.println("*: Multiplication");
     System.out.println("/: Division");
 
+    //Decided to use a string, instead of an int for ease of use
     System.out.print("Enter desired function: ");
-    int choice = scanner.nextInt();
+    String function = scanner.next();
 
     //Default Result is 0
     int result = 0;
@@ -30,19 +31,19 @@ public class JavaCalculator {
     //Add operator functions
     switch (function) {
       default:
-        System.out.print("Invalid selection.")
+        System.out.print("Invalid selection.");
         break;
       case "+":
         result = number1 + number2;
         break;
       case "-":
-        result = number1 - number2
+        result = number1 - number2;
         break;
       case "*":
-        result = number1 * number2
+        result = number1 * number2;
         break;
       case "/":
-        result = number1 / number2
+        result = number1 / number2;
         break;
     }
     
