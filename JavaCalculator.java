@@ -9,24 +9,45 @@ public class JavaCalculator {
     Scanner scanner = new Scanner(system.in);
 
     //Enter two integers
-    system.out.print("Enter the First Number: ");
+    System.out.print("Enter the First Number: ");
     int number1 = scanner.nextInt();
-    system.out.print("Enter the Second Number: ");
+    System.out.print("Enter the Second Number: ");
     int number2 = scanner.nextInt();
 
-    //Go to sleep, then add operators
-    System.out.println("Select a Number Function: ");
-    System.out.println("1. Addition (+)");
-    System.out.println("2. Subtraction (-)");
-    System.out.println("3. Multiplication (*)");
-    System.out.println("4. Division (/)");
+    //Add operators
+    System.out.println("Select a Function: ");
+    System.out.println("+: Addition");
+    System.out.println("-: Subtraction");
+    System.out.println("*: Multiplication");
+    System.out.println("/: Division");
 
-    System.out.print("Enter your functions number: ");
+    System.out.print("Enter desired function: ");
     int choice = scanner.nextInt();
 
-    //Add operator functions
+    //Default Result is 0
+    int result = 0;
 
-    //Add basic error catching
+    //Add operator functions
+    switch (function) {
+      default:
+        System.out.print("Invalid selection.")
+        break;
+      case "+":
+        result = number1 + number2;
+        break;
+      case "-":
+        result = number1 - number2
+        break;
+      case "*":
+        result = number1 * number2
+        break;
+      case "/":
+        result = number1 / number2
+        break;
+    }
+    
+    //Print the result
+    System.out.println("Result: " + result);
     
     //Close the scanner
     scanner.close();
